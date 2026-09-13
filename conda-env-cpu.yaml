@@ -1,0 +1,26 @@
+name: env-conda-tf-cpu
+channels:
+  - conda-forge
+  - nvidia
+dependencies:
+  # Python
+  - python=3.12
+  - pip
+
+  # Scientific stack (conda-forge builds are stable)
+  - numpy=1.26
+  - pandas=2.2.2
+  - scipy=1.11.4
+  - scikit-learn=1.3.2
+  - matplotlib=3.8.3
+  - seaborn=0.13.2
+  - opencv=4.8.1
+  - h5py=3.9.0
+
+  - jupyterlab=4.5.8
+  - ipykernel=7.3.0
+
+  # Install TensorFlow via pip (official wheel with GPU support)
+  - pip:
+    - tensorflow==2.18.0
+    - keras==3.5.0
