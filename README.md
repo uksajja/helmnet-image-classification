@@ -18,6 +18,8 @@ Convolutional Neural Networks
 - Model Performance Evaluation
 - Business Recommendations
 
+- TensorFlow
+- - Docker containerization
 
 ## Steps to Run the project:
 ----------------------------
@@ -46,15 +48,12 @@ Convolutional Neural Networks
   - conda env create -n .conda -f environment.yaml
 
   - To activate this environment, use
-
     - conda activate C:\github\helmnet-image-classification\.conda\tf-cpu
-
-    - # To deactivate an active environment, use
-
+  - To deactivate an active environment, use
     - conda deactivate
 
-    - open notebook and select the local python env-helmnet-image-classification as kernel
-    - run all the cells
+  - open notebook and select the local python env-helmnet-image-classification as kernel
+  - run all the cells
 
 - Inside docker
   - docker build -t helmnet-image-classification .
